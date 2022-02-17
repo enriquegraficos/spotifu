@@ -1,0 +1,18 @@
+.playerPlayback{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center; /* este yo lo agregué*/
+}
+
+.playerPlayback-slider{
+    flex: 1;
+
+}
+
+.playerPlayback-progressTime{
+    line-height: 1; /*Es para cambiar el tamaño de la caja de texto*/
+    font: var(--small);
+    position: relative;
+    top: 1px;
+}

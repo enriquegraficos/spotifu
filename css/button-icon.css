@@ -1,0 +1,25 @@
+.buttonIcon{
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--gray1);
+}
+
+.buttonIcon.is-white{
+    background: var(--white);
+    color: var(--gray5);
+}
+
+.buttonIcon.is-primary{
+    background: var(--primary);
+    color: var(--white);
+}
+
+.buttonIcon .icon-play{
+    position: relative;
+    left: 1px;
+    top: 1px; 
+}

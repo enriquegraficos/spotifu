@@ -1,0 +1,49 @@
+.slider{
+    inline-size: 400px;
+    background-color: rgba(255, 255, 255, .2);
+    block-size: .25rem;
+    border-radius: .5rem;
+}
+
+.slider-volumen{
+    inline-size: 96px;
+    background-color: rgba(255, 255, 255, .2);
+    block-size: .25rem;
+    border-radius: .5rem;
+}
+
+.slider-volumen:hover .slider-progress{
+    background-color: var(--primary); /*Cuando nos ubicamos sobre la barra esta cambia de color a verde*/
+
+}
+
+.slider:hover .slider-progress{
+    background-color: var(--primary); /*Cuando nos ubicamos sobre la barra esta cambia de color a verde*/
+}
+
+.slider:hover .slider-button{
+    display: block;
+}
+
+.slider-progress{
+    block-size: inherit;
+    background-color: var(--white);
+    inline-size: 20%;
+    border-radius: inherit;
+    position: relative;
+}
+
+.slider-button{
+    background-color: var(--white);
+    block-size: 200%;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    aspect-ratio: 1/1; /* para que el elemento sea cuadrado se relaciona con el 200% */
+    position: absolute; /*siempre que movamos el padre el hijo se mueva */
+
+    left: 100%; /* es para mover la pelotita al final de la linea */ 
+    top: 50%;
+    transform: translate(-50%,-50%); /*aca trabajamos con los ejes xy */
+    display: none; /*Es para que el ciruclo no se vea*/
+}
