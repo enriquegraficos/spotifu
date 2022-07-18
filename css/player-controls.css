@@ -1,14 +1,14 @@
 .playerControls{
+    
     display: flex;
     flex-direction: column;
-    gap: .25rem;
-
-
+    gap:.25rem;
+    
 }
 
 .playerControls-buttons{
+  
     display: flex;
-    gap: 1rem;
+    gap: 1rem; /* separación con los botones siguiente y play */ 
     justify-content: center;
-
 }

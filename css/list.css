@@ -1,16 +1,14 @@
 .list{
-    padding-inline-start:1rem;
-    padding-inline-end: 1.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+
 }
 
 .list-title{
-font: var(--baseFont);
-color: var(--gray1);
-/* margin-block-start: 0;
-margin-block-end: .5rem; */
-
+    font: var(--baseFont);
+    margin-block-end: .5rem;
+    margin-block-start: 0;
 }
-
 .list-content{
     padding: 0;
     margin: 0;
@@ -19,13 +17,12 @@ margin-block-end: .5rem; */
     flex-direction: column;
     gap: .5rem;
 }
-
-.list-item{
+/* es para que el último elemento no tenga margen */ 
+.list-item:last-child{
+    margin-block: ;
 }
 
 .list-item a{
     font: var(--baseFontBold);
-    font-weight: bold;
     transition: color .2s;
-
 }

@@ -1,0 +1,16 @@
+.playerPlayBack{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+
+}
+.playerPlayBack-slider {
+    flex: 1; /* hace que ocupe todo el spacio disponible */
+}
+
+.playerPlayBack-progressTime{
+    line-height: 1; /* el tamaño de linea va hacer igual al tamaño de fuente */
+    position: relative; /* para moverlo */
+    top: 1.5px;
+    font:var(--small);
+} 

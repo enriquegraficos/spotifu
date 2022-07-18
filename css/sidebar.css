@@ -1,13 +1,14 @@
-@import url(../css/logo.css);
-@import url(../css/list.css);
-@import url(../css/menu.css);
+@import url(./logo.css);
+@import url(./list.css);
+@import url(./menu.css);
 
 .sidebar{
-    background-color: var(--gray6);
+    background: var(--gray60);
+    block-size: 100vh; /* agregado */
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-direction: column;
-    padding-block-end: 1.5rem;
-    padding-block-start: 1.5rem;
-   
+    padding-block-end: 1.5rem; /* espaciado arriba y abajo de los elementos */
+    padding-inline-start: 1.5rem;
+    /* inline-size: 200px; lo quitamos ya usamos la ellipsis*/ 
 }

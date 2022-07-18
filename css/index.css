@@ -1,0 +1,63 @@
+@import url(./icons.css);
+@import url(./fonts.css);
+@import url(./links.css);
+@import url(./body.css);
+@import url(./button-icons.css);
+@import url(./sidebar.css);
+@import url(./ellipsis.css);
+@import url(./player.css);
+@import url(./page.css);
+@import url(./layout.css);
+@import url(./scrollbar.css);
+
+:root{
+    font-size: 14px;
+    --primary:#00B050;
+    --white: #FFFFFF;
+    --gray10: #B3B3B3;
+    --gray20: #737373;
+    --gray30: #282828;
+    --gray40: #181818;
+    --gray50: #121212;
+    --gray60: #000000;
+
+    /* revisar la propiedad font */
+    --basefontFamily: Avenir, Helvetica, sans-serif;
+    --headline1: bold 2rem/normal var(--basefontFamily);
+    --headline2: bold 1.5rem/1.75rem var(--basefontFamily);
+    --baseFont: normal .875rem/1.375rem var(--basefontFamily);
+    --baseFontBold: bold .875rem/1.375rem var(--basefontFamily);
+    --button: bold .875rem/1rem var(--basefontFamily);
+    --small: normal .75rem/normal var(--basefontFamily);
+}
+
+/* cuando ya excedimos cierto tamaño estandar */
+
+@media screen and (min-width:768px) {
+    :root{
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (min-width:1367px) {
+    :root{
+        font-size: 18px;
+
+    }
+}
+
+/* body{
+    background-color: var(--primary);
+    font-family: var(--base-fontFamily);
+}
+
+button {
+    font-size: 100px;
+    color: green;
+
+}
+
+button:hover{
+    color: black;
+} */

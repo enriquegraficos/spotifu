@@ -1,211 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="./css/styles.css">
-
-</head>
-<body class="body"> 
-
-    <div class="playlistB">
-        <div class="playlistB-cover">
-
-            <img src="./img/anime-hits.jpg" width="76" height="76" alt="Anime hits image">
-        </div>
-        <div class="playlistB-details">
-            <h3 class="playlistB-title">Naruto Openings & endings</h3>
-
-            <div class="playlistB-control">
-                <button class="buttonIcon is-primary" title="Reproducir la lista" aria-label="Reproducir la lista de reproducción">
-                    <i class="icon-play" aria-hidden="true"></i>
-                </button>
-
-            </div>
-            </div>
-        
-        </div>
-    </div>
-   <div class="playlistA">
-       <div class="playlistA-cover">
-           <img src="./img/anime-hits.jpg" width="150" height="150" alt="cover de la playlist anime hits">
-            <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                <i class="icon-play" aria-hidden="true"></i>
-            </button>
-       </div>
-       <h3 class="playlist-title">Anime Hits</h3>
-       <h4 class="playlist-description">Naruto, Your Name, Weathering With You </h4>
-   </div>
-
-    
-    <div cla ss="sidebar">
-        <header class="logo">   
-            <a href="/" aria-current="page">
-                <img src="./img/logo.png" class="logo-image" alt="Logo" width="112" height="32">
-            </a>
-        </header>
-        <nav class="menu" aria-label="principal">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotifu </title>
+        <link rel="stylesheet" href="./css/index.css">
+        <meta property="og:title" content="Spotifu con FlexBox" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://www.pexels.com/es-es/foto/foto-de-una-computadora-portatil-y-una-tableta-sobre-la-mesa-2528118/" />
+        <meta property="og:description" 
+            content="Este es un proyecto realizado con CSS y FlexBoX durante dos semanas, a partir de un clon de Spotify" />
+    </head>
+    <body class="body">
+        <div class="layout">
+            <div class="layout-block">
+                <div class="layout-sidebar">
+                    <div class="sidebar">
+                        <header class="logo" >
+                   
+                        <a href="/" aria-current="page">
+                        <img src="./images/spotifu-logo.png" class="logo-image" alt="Logo Spotifu">
+                        </a>
+                    </header>
             
-            <ul class="menu-list">
-                <li class="menuItem is-active">
-                    <a href="/" class="link" aria-current="page">
-                        <i class="icon-home" aria-hidden="true"></i> 
-                        <span>Inicio</span>
-                    </a>
-                </li>
+                    <nav class="menu" aria-label="Principal">
+                        <ul class="menu-list">
+                            <li class="menu-item is-active">
+                                <a href="/" aria-current="page" class="link">
+                                    <i class="icon-home" aria-hidden="true"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="/" aria-current="page" class="link">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li class="menu-item" >
+                                <a href="/" aria-current="page" class="link">
+                                    <i class="icon-creditCard" aria-hidden="true"></i>
+                                    <span>Premiun</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="list" aria-labelledby="library-navigation">
+                        <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <a href="#" class="link">Creada para ti</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Escuchado recientemente</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Tus Me Gusta</a>
+                            </li> 
+                        </ul>
+                    </nav>
                 
-                <li class="menuItem">
-                    <a href="/" class="link">
-                        <i class="icon-search" aria-hidden="true"></i>
-                        <span>Buscar</span>
-                    </a>
-                </li>
-                
-                <li class="menuItem">
-                    <a href="/" class="link">
-                        <i class="icon-creditCard" aria-hidden="true"></i>
-                        <span>Premiun</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <nav class="list" aria-labelledby="Library-navigation">
-            <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-            <ul class="list-content">
-                <li class="list-item">
-                    <a href="#" class="link">Creada para ti</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="link">Escuchado recientemente</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="link">Tus Me gusta</a>
-                </li>
-                
-            </ul>
-        </nav>
-        
-        <nav class="list" aria-labelledby="playlist-navigation">
-            <h2 class="list-title" id="playlist-navigation">Playlist</h2>
-            <ul class="list-content">
-                <li class="list-item">
-                    <a href="" class="link">Lo mejor de los mejor</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Naruto al 100% para progr…</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Para cantar en la ducha</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Sin parar</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Naruto openings</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Boku no pico</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">This is Pokémon</a>
-                </li>
-                <li class="list-item">
-                    <span class="elipsis">
-                        <a href="" class="link">Más populares de la semana</a>
-                        
-                    </span>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Mis pistas de shazam</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="link">Audio Library</a>
-                </li>
-                
-            </ul>
-        </nav>
-        
-    </div>
+                    <nav class="list" aria-labelledby="playlist-navegation">
+                        <h2 class="list-title" id="library-navigation"> Playlist</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <a href="#" class="link">Lo mejor de los mejor</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Clásicos que no mueren</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Para cantar en la ducha</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Tarde de café</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Lofi</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Para microbuseros</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Navideñas</a>
+                            </li> 
+                            <li class="list-item">
+                                <span class="ellipsis">
+            
+                                    <a href="#" class="link">Más populares de la semana</a>
+                                </span>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Mis pistas de shazam</a>
+                            </li> 
+                            <li class="list-item">
+                                <a href="#" class="link">Relax</a>
+                            </li> 
+                           
+                        </ul>
+                    </nav>
+                </div>
     
-    <div class="player">
-        <div class="player-nowPlaying">
-            <div class="nowPlaying">
-                <div class="nowPlaying-cover">
-                    <img src="./img/mini-cover.png" width="96" height="96" alt="Portada Overpass Graffiti" title="Portada Overpass Graffiti">
-        
                 </div>
-        
-                <div class="nowPlaying-details">
-                    <div class="nowPlaying-description">
-                        <a href="#song" class="nowPlaying-title">Overpass Graffiti</a>
-                        <a href="#artist" class="nowPlaying-artist">Ed Sheeran</a>
-        
-                    </div>
-                    <div class="nowPlaying-actions">
-                        <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
-                            <i class="icon-heart" aria-hidden="true">
-                            </i>
-                        </button>            
+                <div class="layout-main">
+                    <div class="page">
+                        <div class="sticky">
+                            <div class="page-block">
+                            <header class="header" aria-label="Barra superior y menú del usuario">
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <form class="search" action="#" role="search" aria-label="Buscar por Artistas, canciones o podcast">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input id="search" type="search" placeholder="Buscar por Artistas, canciones o podcast">
+                                </form>
+                            </header>
+                        </div>
+                        </div>
+                        <main class="page-block">
+            
+                            <section class="playlistList" aria-labelledby="region1">
+                                <div class="playlistList-top">
+                    
+                                    <h2 class="playlistList-title" id="region1">
+                                        Buenas noches
+                                    </h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/all ears english.jpg" width="76" height="76" alt="All ears english Podcast">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Podcast </h3>
+                                            <div class="playlistB-control">
+                                                
+                                                <button class="buttonIcon is-primary" title="Reproducir all ears english podcast">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/dualipa.jpg" width="76" height="76" alt="cover dua lipa">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Mix Pop </h3>
+                                            <div class="playlistB-control">
+                                                
+                                                <button class="buttonIcon is-primary" title="Reproducir pop">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/london.jpg" width="76" height="76" alt="London Grammar">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">London Grammar </h3>
+                                            <div class="playlistB-control">
+                                                
+                                                <button class="buttonIcon is-primary" title="Reproducir London Grammar">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/tisha.jpg" width="76" height="76" alt="lofi mix">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Lofi mix </h3>
+                                            <div class="playlistB-control">
+                                                
+                                                <button class="buttonIcon is-primary" title="Reproducir lofi mix">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/la magia del caos.jpg" width="76" height="76" alt="cover de la playlist anime hits">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">La magia del caos</h3>
+                                            <div class="playlistB-control">
+                                                
+                                                <button class="buttonIcon is-primary" title="Reproducir la magia del caos">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                                            
+                                            <img src="./images/bad bunny.jpg" width="76" height="76" alt="Cover modo coaster">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Modo coaster </h3>
+                                            
+                                            <div class="playlistB-control">
+                            
+                                                <button class="buttonIcon is-primary" title="Reproducir modo coaster">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                            
+                                            <img src="./images/gueta.jpg" width="76" height="76" alt="cover David Guetta">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">David Guetta</h3>
+                                            <div class="playlistB-control">
+                            
+                                                <button class="buttonIcon is-primary" title="Reproducir David Guetta">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlistB">
+                                        <div class="playlistB-cover">
+                            
+                                            <img src="./images/katyperry.jpg" width="76" height="76" alt="cover de la playlist anime hits">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Katy Perry </h3>
+                                            <div class="playlistB-control">
+                            
+                                                <button class="buttonIcon is-primary" title="Reproducir Katy Perry">
+                                                    <i class="icon-play" aria-hidden="true" ></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                            <section class="playlistList" aria-labelledby="region2">
+                                <div class="playlistList-top">
+                    
+                                    <h2 class="playlistList-title" id="region2">
+                                        Escuchado recientemente
+                                    </h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/tokio.jpg" alt="Tokio Hotel" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Tokio Hotel</h3>
+                                        <h3 class="playlistA-description">World Behind My Wall</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/levitation.jpg" alt="Dua lipa" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Dua Lipa</h3>
+                                        <h3 class="playlistA-description">Levitating</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/london_gramar.jpg" alt="London Grammar" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">London Grammar</h3>
+                                        <h3 class="playlistA-description">Wasting My Young Years</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/overpass.jpg" alt="Ed Sheeran" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ed Sheeran</h3>
+                                        <h3 class="playlistA-description">Overpass Graffiti</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/sister.jpg" alt="TSHA" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">TSHA</h3>
+                                        <h3 class="playlistA-description">Sister</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/tom.jpg" alt="Tom Grennan" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Tom Grennan</h3>
+                                        <h3 class="playlistA-description">Dont't Break the Heart</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/human.jpg" alt="The Killers" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">The Killers</h3>
+                                        <h3 class="playlistA-description">Human</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/yellow.jpg" alt="Coldplay" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Coldplay</h3>
+                                        <h3 class="playlistA-description">Yellow</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/pizza.jpg" alt="Martin Garrix" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Martin Garrix</h3>
+                                        <h3 class="playlistA-description">Pizza</h3>
+                                    </div>
+                    
+                                </div>
+                            </section>
+                            <section class="playlistList" aria-labelledby="region3">
+                                <div class="playlistList-top">
+                    
+                                    <h2 class="playlistList-title" id="region3">
+                                        Podcast                        </h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/all ears english.jpg" alt="All ears english podcast" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">All ears english podcast</h3>
+                                        <h3 class="playlistA-description">Lindsay McMahon and Michelle Kaplan</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/chu.jpg" alt="Redescubriendome con Chu Rodríguez" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Redescubriendome con Chu Rodríguez</h3>
+                                        <h3 class="playlistA-description">Chu Rodríguez</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/empieza en ti.jpg" alt="Empieza en ti" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Empieza en ti</h3>
+                                        <h3 class="playlistA-description">Paola Zurita</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/crea una vida.jpg" alt="Crea una vida que ames" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Crea una vida que ames</h3>
+                                        <h3 class="playlistA-description">Jim</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/dale que se puede.jpg" alt="Dale que se puede con Sabrina" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Dale que se puede con Sabrina</h3>
+                                        <h3 class="playlistA-description">Sabrina Nicolle</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/dementes.jpg" alt="Dementes" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Dementes</h3>
+                                        <h3 class="playlistA-description">Diego Barrazas</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/hablando de.jpg" alt="Hablando de " width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Hablando de </h3>
+                                        <h3 class="playlistA-description">Maria Paula</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/la magia del caos.jpg" alt="La magia del caos" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">La magia del caos</h3>
+                                        <h3 class="playlistA-description">Aislyn Derbez</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/te vas a morir.jpg" alt="Te vas a morir" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Te vas a morir</h3>
+                                        <h3 class="playlistA-description">Diego Dreyfus</h3>
+                                    </div>
+                    
+                                </div>
+                            </section>
+                            <section class="playlistList" aria-labelledby="region4">
+                                <div class="playlistList-top">
+                    
+                                    <h2 class="playlistList-title" id="region4">
+                                        Lo mejor de lo mejor
+                                    </h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/dualipa.jpg" alt="Dua Lipa" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Levitating</h3>
+                                        <h3 class="playlistA-description">Dua Lipa</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/london.jpg" alt="London Grammar" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Wasting my Young years</h3>
+                                        <h3 class="playlistA-description">London Grammar</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/katyperry.jpg" alt="Katy Perry" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Fireworks</h3>
+                                        <h3 class="playlistA-description">Katy Perry</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/selena_gomez.jpg" alt="Selena Gómez" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Who says</h3>
+                                        <h3 class="playlistA-description">Selena Gómez</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/tisha.jpg" alt="TISHA" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">TSHA</h3>
+                                        <h3 class="playlistA-description">Sister</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/sofia_kourtesis.jpg" alt="Sofia Kourstesis" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">La perla</h3>
+                                        <h3 class="playlistA-description">Sofia Kouretesis</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/black_eyes_peas.jpg" alt="The black eyes peas" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">I miss you</h3>
+                                        <h3 class="playlistA-description">The Black Eyes Peas</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/harry.jpg" alt="Harry Styles" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title"> As it was </h3>
+                                        <h3 class="playlistA-description">Harry Styles</h3>
+                                    </div>
+                                    <div class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="./images/gueta.jpg" alt="David Guetta" width="150" height="150">
+                                            <button aria-label="Reproducir" title="Reproducir" class="buttonIcon is-primary">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Titanium</h3>
+                                        <h3 class="playlistA-description">David Guetta</h3>
+                                    </div>
+                    
+                                </div>
+                            </section>
+                            
+                        </main>
+                        
+                        
                     </div>
                 </div>
-        
+                
             </div>
-
-        </div>
-        <div class="player-playerControls">
-
-            <div class="playerControls">
-                <div class="playerControls-buttons" aria-label="Controles de reproducción">
-        
-                    <button class="buttonIcon" aria-label="Anterior" title="Anterior">
-                        <i class="icon-prev" aria-hidden="true"></i>
-                    </button>
-                    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
-                     <i class="icon-play" aria-hidden="true"></i>
-                 </button>
-                 <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
-                    <i class="icon-next" aria-hidden="true"></i>
-                </button>
-        
-                </div>
-                <div class="playerPlayback">
-                    <span class="playerPlayback-progressTime">01:40</span>
-                    <div class="palyerPlayback-slider">
-                        <div class="slider">
-                            <div class="slider-progress">
-                                <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+            
+            <div class="layout-block">
+                <footer class="layout-button">
+                    <div class="player">
+                        <div class="player-nowPlaying">
+            
+                            <div class="nowPlaying">
+                                <div class="nowPlaying-cover">
+                                    
+                                    <img src="./images/sister.jpg" alt="canción" width="56" height="56" alt="TSHA" title="TSHA"> 
+                                </div>
+                                <div class="nowPlaying-details">
+                                    <div class="nowPlaying-description">
+                                        
+                                        <a href="#Song" class="nowPlaying-title">TSHA</a>
+                                        <a href="#singer" class="nowPlaying-singer" >Sister</a>
+                                    </div>
+                                    <div class="nowPlayin-actions">
+                                        <button class="player-control" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                            
+                                            <i class="icon-heart" id="heart-icon" role="switch" aria-hidden="true">
+                                            </i>
+                                            
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="player-playerControls">
+                            <div class="playerControls">
+                                <div class="playerControls-buttons" aria-label="Controles de reproducción">
+                                    <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                                        <i class="icon-prev" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                                        <i class="icon-play" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                                        <i class="icon-next" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="playerPlayBack">
+                                    <span class="playerPlayBack-progressTime">01:40</span>
+                                    <div class="playerPlayBack-slider">
+                            
+                                        <div class="slider">
+                                            <div class="slider-progress">
+                                                <button class="slider-button" aria-label="Controlar el progreso de la reproducción">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="playerPlayBack-progressTime">03:25</span>
+                                  
+                                </div>
+                    </div>
+                        </div> 
+                        <div class="player-playerVolumen">
+                
+                            <div class="playerVolumen">
+                                        <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+                                    
+                                            <i class="icon-volumenUp" id="volumen-icon" role="presentation" aria-label="Volumen alto">
+                                            </i>
+                                            
+                                        </button>
+                                        <div class="slider">
+                                            <div class="slider-progress">
+                                                <button class="slider-button" aria-label="Controlar el progreso de la reproducción">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="playerVolumen-slider"></div>
+                                    
                             </div>
                         </div>
                     </div>
-                    <span class="playerPlayback-progressTime">01:40</span>
-                    
                 </div>
-            </div>
-        
         </div>
-        <div class="player-playerVolumen">
-
-            <div class="playerVolumen">
-                <button class="player-control" aria-label="Silenciar" aria-labelledby="volumen-icon">
-                    <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto">
-                    </i>
-                </button>
-                <div class="playerVolumen-slider">
-                    <div class="slider-volumen">
-                        <div class="slider-progress">
-                            <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
         </div>
-    </div>
+    <!-- <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+        <i class="icon-prev" aria-hidden="true"></i>
+    </button>
+    <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
+        <i class="icon-next" aria-hidden="true"></i>
+    </button> -->
     
+  
 
- 
+    <!-- <a href="#" class="link">Clic Aquí</a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor autem qui accusamus, repellendus voluptatibus placeat impedit possimus sunt est tempore ullam iusto voluptatem laboriosam magnam delectus quisquam cum, quis quod?</p>
+    <button>
+        <i class="icon-home"></i>
+    </button>
+    <i class="icon-homeActive"></i>
+    <i class="icon-home"></i> -->
+
 </body>
 </html>

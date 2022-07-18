@@ -1,12 +1,12 @@
 .playerVolumen{
-    
+   
     display: flex;
     align-items: center;
-    
+
 }
 
 .playerVolumen-slider{
     flex: 1;
-    /* inline-size: 6rem; */
-    
+    max-inline-size: 6rem;
+
 }

@@ -1,0 +1,5 @@
+.sticky{
+    position: sticky;
+    top: 0; /* par que muestre mientras desplazamos */
+    z-index:1;
+}

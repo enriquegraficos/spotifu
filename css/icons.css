@@ -1,27 +1,20 @@
-/* [class^='icon-'],[class*=' icon-']{
-    inline-size: 40px;
-    block-size: 40px;
+/* .icon-home{
+    background-image: url(../icons/home1.svg);
+    block-size: 50px;
+    inline-size: 50px;
     background-size: cover;
     display: inline-block;
-
-}
-
-.icon-home{
-    background-image: url(../img/icons/home.svg);
-}
-
-.icon-home-active{
-   
-    background-image: url(../img/icons/home-active.svg);
 } */
+/* Los elementos inline no pueden tener ni ancho ni alto */ 
+/* por eso ponemos inline block */ 
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/');
-    src:  url('../fonts/#iefix') format('embedded-opentype'),
-      url('../fonts//icomoon.ttf?os8777') format('truetype'),
-      url('../fonts//icomoon.woff?os8777') format('woff'),
-      url('../fonts//icomoon.svg?os8777#icomoon') format('svg');
+    src:  url('../icons/fonts/icomoon.eot');
+    src:  url('../icons/fonts/icomoon.eot') format('embedded-opentype'),
+      url('../icons/fonts/icomoon.ttf') format('truetype'),
+      url('../icons/fonts/icomoon.woff') format('woff'),
+      url('../icons/fonts/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -42,7 +35,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-addPlus:before {
+  .icon-add:before {
     content: "\e900";
   }
   .icon-arrowLeft:before {
@@ -54,49 +47,49 @@
   .icon-calendar:before {
     content: "\e903";
   }
-  .icon-clock:before {
+  .icon-circle:before {
     content: "\e904";
   }
-  .icon-close:before {
+  .icon-clock:before {
     content: "\e905";
   }
-  .icon-creditCard:before {
+  .icon-close:before {
     content: "\e906";
   }
-  .icon-download:before {
+  .icon-creditCard:before {
     content: "\e907";
   }
-  .icon-heart:before {
+  .icon-download:before {
     content: "\e908";
   }
-  .icon-home:before {
+  .icon-heart:before {
     content: "\e909";
   }
-  .icon-home-Active:before {
+  .icon-home:before {
     content: "\e90a";
   }
-  .icon-library:before {
+  .icon-homeActive:before {
     content: "\e90b";
   }
-  .icon-libraryActive:before {
+  .icon-library:before {
     content: "\e90c";
   }
-  .icon-music:before {
+  .icon-libraryActive:before {
     content: "\e90d";
   }
-  .icon-next:before {
+  .icon-music:before {
     content: "\e90e";
   }
-  .icon-pause:before {
+  .icon-next:before {
     content: "\e90f";
   }
-  .icon-play:before {
+  .icon-pause:before {
     content: "\e910";
   }
-  .icon-prev:before {
+  .icon-play:before {
     content: "\e911";
   }
-  .icon-round:before {
+  .icon-prev:before {
     content: "\e912";
   }
   .icon-search:before {
@@ -105,16 +98,16 @@
   .icon-searchActive:before {
     content: "\e914";
   }
-  .icon-Vector:before {
+  .icon-vector:before {
     content: "\e915";
   }
-  .icon-volumeDown:before {
+  .icon-volumen:before {
     content: "\e916";
   }
-  .icon-volumeOff:before {
+  .icon-volumenOff:before {
     content: "\e917";
   }
-  .icon-volumeUp:before {
+  .icon-volumenUp:before {
     content: "\e918";
   }
   

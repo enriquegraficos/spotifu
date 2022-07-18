@@ -1,0 +1,44 @@
+:root{
+    --sidebarInlineSize:15rem; /* ancho del sidebar */
+    --minBlockSize:37.5rem; /* alto */
+    --minInlineSize:48rem; /*ancho */
+    --bottonSize:5.5rem; /* el alto del reproductor */
+
+}
+
+.layout{
+    /* box-shadow: inset 0 0 0 10px red; */
+    min-inline-size: var(--minInlineSize); /* es para el ancho en resolución */
+}
+
+.layout-block{
+    display: flex;
+
+}
+
+.layout-main{
+    /* block-size: 100vh; /* es como poner el 100 por ciento de alto */ 
+    overflow: auto; /* cuando hay desborde de contenido y se agrega como scroll */
+    block-size: calc(100vh - var(--bottonSize)); /* toma el 100% del area visible menos lo que tenemos del button */
+    min-block-size: var(--minBlockSize);
+ 
+}
+
+.layout-sidebar{
+    inline-size: var(--sidebarInlineSize);
+    block-size: calc(100vh - var(--bottonSize));
+    min-block-size: var(--minBlockSize);
+  
+    overflow: auto; /* scrollo de forma vertical */
+    flex-shrink: 0; /* para que se no se haga más pequeño de lo que le hemos dado */
+}
+
+
+.layout-button{
+    flex: 1;
+
+}
+
+.layout-block{
+    display: flex;
+}

@@ -1,0 +1,34 @@
+.buttonIcon{
+    inline-size: 2.5rem; /* 40px */
+    block-size: 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--gray10);
+}
+
+.buttonIcon.is-white{
+    background: var(--white);
+    color: var(--gray50);
+}
+
+.buttonIcon.is-primary{
+    background: var(--primary);
+    color: var(--white);
+}
+
+.buttonIcon.icon-play{
+    position: relative;
+    left: 1px; /* se le aplica a todos los play */
+    top: 1px;
+}
+
+/* si el elemento incluye una clase que inice con is -- pasa esto */ 
+.buttonIcon:active:is([class*='is-']){
+    transform: scale(0.95); /* scale de 1 es la que tenemos por defecto */ 
+}
+
+.buttonIcon:hover:is([class*='is-']){
+    box-shadow: 0 8px 8px rgb(0,0,0,.3);
+}

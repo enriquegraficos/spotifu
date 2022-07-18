@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    gap: 1rem;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    align-items: center;
+    background:var(--gray50);
+    /* backdrop-filter:blur(5px); desenfoque gausiano */
+}
+
+/* si no soporta algun elemento en otro navegador */
+@supports not(backdrop-filter:blur(5px)){
+    .header{
+        background: red;
+    }
+}
+
+/* gap no tiene soporte en safari */

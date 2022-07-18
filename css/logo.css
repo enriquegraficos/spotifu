@@ -1,10 +1,10 @@
 .logo{
-    padding-inline-start:1rem;
-    padding-inline-end: 6rem;
-
+ padding-inline-start: 1rem;
+ padding-inline-end: 1.5rem;
 }
 
 .logo-image{
-    inline-size: 7rem;
+    inline-size:7rem ;
     block-size: 2rem;
+    margin-top: 1rem;
 }
